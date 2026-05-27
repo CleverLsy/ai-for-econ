@@ -1,0 +1,173 @@
+site_name: AI for Econ
+site_description: 经济学研究者的 AI 协作手册
+site_author: 刘松月 (Clever Liu)
+site_url: https://liusongyue.github.io/ai-for-econ/
+
+repo_name: LiuSongyue/ai-for-econ
+repo_url: https://github.com/LiuSongyue/ai-for-econ
+edit_uri: edit/main/docs/
+
+copyright: "© 2026 刘松月 · CC BY-NC-SA 4.0"
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - glightbox
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+      allow_errors: false
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/LiuSongyue
+    - icon: fontawesome/solid/house
+      link: https://liusongyue.github.io
+  generator: false
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 写在前面:
+    - preface/index.md
+    - 这本手册是给谁的: preface/audience.md
+    - 怎么读这本手册: preface/how-to-read.md
+    - 元说明：本书是怎么用 AI 写的: preface/meta.md
+  - 概念地图:
+    - concepts/index.md
+    - 大模型基础: concepts/llm-basics.md
+    - Agent 与 Harness Engineering: concepts/agent-harness.md
+    - Prompt 与 Context Engineering: concepts/prompt-context.md
+    - RAG 与知识库: concepts/rag.md
+    - Skill 的本质: concepts/skill.md
+    - MCP 与 API: concepts/mcp-api.md
+    - Vibe Coding 的边界: concepts/vibe-coding.md
+  - 工具栈:
+    - tools/index.md
+    - 按门槛分层: tools/by-level.md
+    - 国内外可访问性地图: tools/access-map.md
+    - 学术专用工具: tools/academic.md
+    - Skill 资源库: tools/skill-hubs.md
+    - MCP 资源: tools/mcp-resources.md
+  - 研究 Pipeline:
+    - pipeline/index.md
+    - 选题与 Idea 挖掘: pipeline/ideation.md
+    - 文献检索与综述: pipeline/literature.md
+    - 文献精读与复现: pipeline/paper-reading.md
+    - 数据爬取与清洗: pipeline/data.md
+    - 数据分析: pipeline/analysis.md
+    - 写作: pipeline/writing.md
+    - 学术汇报与备课: pipeline/presentation.md
+    - 投稿与期刊匹配: pipeline/submission.md
+  - 自己写 Skill:
+    - skills/index.md
+    - 什么时候该写 Skill: skills/when.md
+    - SKILL.md 结构: skills/structure.md
+    - 走一遍真实任务: skills/walkthrough.md
+    - 维护与迭代: skills/maintenance.md
+  - 案例库:
+    - cases/index.md
+    - 选题：从新闻到研究问题: cases/01-ideation.md
+    - 文献综述全流程: cases/02-literature.md
+    - 数据爬取: cases/03-data.md
+    - 实证分析: cases/04-empirical.md
+    - 写作与投稿: cases/05-writing.md
+  - 边界与避坑:
+    - boundaries/index.md
+    - 学术伦理与 AI 声明: boundaries/ethics.md
+    - 数据隐私: boundaries/privacy.md
+    - 复现性与可追溯: boundaries/reproducibility.md
+    - 常见翻车现场: boundaries/pitfalls.md
+    - 何时一定要人工兜底: boundaries/human-in-loop.md
+  - 附录:
+    - appendix/index.md
+    - 推荐阅读: appendix/reading-list.md
+    - 术语表: appendix/glossary.md
+    - 链接库: appendix/links.md
+    - 更新日志: appendix/changelog.md
