@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI for Econ
 
 > **经济学研究者的 AI 协作手册**
@@ -8,41 +9,66 @@ ps：最初的设计思路是三个模块——
 模块二：工具栈，从底层大模型到 Agent，到 skill 集合站、MCP 工具、常用编辑器等的说明和介绍；
 模块三：具体研究场景中的应用，从选题、文献综述，到数据分析、审稿，再到备课或论文 slides 制作等。
 这个项目最初是为了满足自己的一些想法和爱好做的探索，目前内容多由 AI 生成，仍在玩具阶段。我想让它的完善过程更自然——边学边用、边记录边输出，以节省时间成本。如果有任何问题或建议，欢迎在 issue 里提出。
+=======
+---
+hide:
+  - navigation
+  - toc
+>>>>>>> 8d34ddc (preface adjustment)
 ---
 
-## 这本手册想做什么
+<div class="hero" markdown>
+
+<span class="hero-tagline">:material-book-open-variant: 经济学研究者的 AI 协作手册</span>
+
+# AI for Econ { .hero-title }
+
+从概念到工具，从工作流到真实研究案例，<br>把 AI 真正接入你的研究生产线。
+{ .hero-subtitle }
+
+<div class="hero-actions" markdown>
+[:material-rocket-launch: 开始阅读](preface/index.md){ .md-button .md-button--primary }
+[:material-map-outline: 概念地图](concepts/index.md){ .md-button }
+[:material-flask-outline: 案例库](cases/index.md){ .md-button }
+</div>
+
+</div>
+
+## 这本手册想做什么 { .section-heading }
 
 这是一本写给经济学研究者的 AI 协作手册。它**不**是一份"AI 能做什么"的功能清单，也**不**是"提示词大全"，而是一套围绕**真实研究工作流**展开的协作方法论。
 
 我们关心的问题：
 
-- 文献综述、精读、复现，AI 能帮到哪一步，哪些必须人工兜底？
-- 怎么把零散的提示词积累成可复用的 **Skill**？
-- 国内研究者无法访问 Claude / ChatGPT 时，有哪些等效平替？
-- AI 编造文献、伪造数据来源——这些**学术杀伤力极强的翻车**怎么避免？
-- 数据隐私、未发表数据、涉密内容，能不能传云端？
+<ul class="question-list">
+<li>文献综述、精读、复现，AI 能帮到哪一步，哪些必须人工兜底？</li>
+<li>怎么把零散的提示词积累成可复用的 <strong>Skill</strong>？</li>
+<li>国内研究者无法访问 Claude / ChatGPT 时，有哪些等效平替？</li>
+<li>AI 编造文献、伪造数据来源——这些<strong>学术杀伤力极强的翻车</strong>怎么避免？</li>
+<li>数据隐私、未发表数据、涉密内容，能不能传云端？</li>
+</ul>
 
-## 内容结构
+## 内容结构 { .section-heading }
 
 <div class="grid cards" markdown>
 
-- :material-book-open-page-variant:{ .lg .middle } **概念地图**
+- :material-book-open-page-variant:{ .lg .middle } &nbsp;**概念地图**
 
     ---
 
-    LLM、Agent、Harness、RAG、Skill、MCP——把名词背后的真实含义讲清楚。
+    LLM、Agent、Harness、RAG、Skill、MCP——把名词背后的真实含义讲清楚，避免被术语淹没。
 
     [:octicons-arrow-right-24: 进入](concepts/index.md)
 
-- :material-toolbox:{ .lg .middle } **工具栈**
+- :material-toolbox:{ .lg .middle } &nbsp;**工具栈**
 
     ---
 
-    按门槛分层的工具地图，国内外可访问性，Skill 与 MCP 资源汇总。
+    按门槛分层的工具地图，国内外可访问性对照，Skill 与 MCP 资源汇总。
 
     [:octicons-arrow-right-24: 进入](tools/index.md)
 
-- :material-pipe:{ .lg .middle } **研究 Pipeline**
+- :material-pipe:{ .lg .middle } &nbsp;**研究 Pipeline**
 
     ---
 
@@ -50,7 +76,7 @@ ps：最初的设计思路是三个模块——
 
     [:octicons-arrow-right-24: 进入](pipeline/index.md)
 
-- :material-hammer-wrench:{ .lg .middle } **自己写 Skill**
+- :material-hammer-wrench:{ .lg .middle } &nbsp;**自己写 Skill**
 
     ---
 
@@ -58,15 +84,15 @@ ps：最初的设计思路是三个模块——
 
     [:octicons-arrow-right-24: 进入](skills/index.md)
 
-- :material-flask:{ .lg .middle } **案例库**
+- :material-flask:{ .lg .middle } &nbsp;**案例库**
 
     ---
 
-    一个真实研究项目从选题、综述、数据、实证到写作的完整可复现案例。
+    一个真实研究项目，从选题、综述、数据、实证到写作的完整可复现案例。
 
     [:octicons-arrow-right-24: 进入](cases/index.md)
 
-- :material-shield-alert:{ .lg .middle } **边界与避坑**
+- :material-shield-alert:{ .lg .middle } &nbsp;**边界与避坑**
 
     ---
 
@@ -76,20 +102,58 @@ ps：最初的设计思路是三个模块——
 
 </div>
 
-## 怎么读
+## 怎么读 { .section-heading }
 
 不同读者建议的路径不同：
 
-- **完全新手 / 老师**：先读 [写在前面](preface/index.md) → 概念地图 1.1-1.3 → 工具栈"网页版" → 选一个 Pipeline 章节
-- **博士生 / 有点基础**：直接跳 Pipeline + 案例库，遇到不懂的概念回查
-- **想做自己的 Skill**：概念地图 1.5 → 自己写 Skill → 案例库
+<table class="path-table">
+<thead>
+<tr>
+<th style="width: 22%;">读者画像</th>
+<th>建议路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="path-tag">新手</span> 完全新手 / 老师</td>
+<td><a href="preface/">写在前面</a> → <a href="concepts/">概念地图 1.1–1.3</a> → 工具栈"网页版" → 选一个 Pipeline 章节</td>
+</tr>
+<tr>
+<td><span class="path-tag">进阶</span> 博士生 / 有点基础</td>
+<td>直接跳 <a href="pipeline/">Pipeline</a> + <a href="cases/">案例库</a>，遇到不懂的概念回查</td>
+</tr>
+<tr>
+<td><span class="path-tag">动手</span> 想做自己的 Skill</td>
+<td><a href="concepts/skill/">概念地图 1.5</a> → <a href="skills/">自己写 Skill</a> → <a href="cases/">案例库</a></td>
+</tr>
+</tbody>
+</table>
 
-## 关于本手册
+## 关于本手册 { .section-heading }
 
-- **作者**：CleverLsy，经济学研究者
-- **协作方式**：本手册由作者与 AI（Claude / ChatGPT 等）协同写作，写作过程本身就是一个案例（见 [元说明](preface/meta.md)）
-- **许可**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
-- **GitHub**：[CleverLsy/ai-for-econ](https://github.com/CleverLsy/ai-for-econ) · 欢迎 Issue 与 PR
+<div class="meta-info" markdown>
 
-!!! tip "关于版本"
-    本手册持续更新。最新更新见 [更新日志](appendix/changelog.md)。
+<div class="meta-info-item" markdown>
+<span class="meta-label">:material-account-edit: 作者</span>
+<span class="meta-value">CleverLsy · 经济学研究者</span>
+</div>
+
+<div class="meta-info-item" markdown>
+<span class="meta-label">:material-robot-happy: 协作方式</span>
+<span class="meta-value">人 × AI 协同写作（[元说明](preface/meta.md)）</span>
+</div>
+
+<div class="meta-info-item" markdown>
+<span class="meta-label">:material-license: 许可</span>
+<span class="meta-value">[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</span>
+</div>
+
+<div class="meta-info-item" markdown>
+<span class="meta-label">:material-github: GitHub</span>
+<span class="meta-value">[CleverLsy/ai-for-econ](https://github.com/CleverLsy/ai-for-econ) · 欢迎 Issue / PR</span>
+</div>
+
+</div>
+
+!!! tip "持续更新中"
+    本手册仍在持续迭代。最新进度见 [更新日志](appendix/changelog.md)。

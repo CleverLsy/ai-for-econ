@@ -1,0 +1,267 @@
+/* ===========================================
+   AI for Econ — 自定义样式
+   =========================================== */
+
+/* 首页 Hero 区域 */
+.hero {
+  position: relative;
+  margin: -1.5rem -1.5rem 2.5rem;
+  padding: 3.5rem 2rem 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(103, 58, 183, 0.08) 0%,
+    rgba(255, 193, 7, 0.05) 100%
+  );
+  border-radius: 0 0 12px 12px;
+  text-align: center;
+  overflow: hidden;
+}
+
+[data-md-color-scheme="slate"] .hero {
+  background: linear-gradient(
+    135deg,
+    rgba(103, 58, 183, 0.18) 0%,
+    rgba(255, 193, 7, 0.08) 100%
+  );
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(103, 58, 183, 0.12) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #673ab7 0%, #ffa726 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1.8rem;
+  font-weight: 400;
+}
+
+.hero-tagline {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(103, 58, 183, 0.1);
+  border: 1px solid rgba(103, 58, 183, 0.2);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--md-primary-fg-color);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+[data-md-color-scheme="slate"] .hero-tagline {
+  background: rgba(103, 58, 183, 0.2);
+  border-color: rgba(179, 136, 255, 0.3);
+}
+
+/* Hero 行动按钮 */
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.hero-actions .md-button {
+  margin: 0;
+  padding: 0.55rem 1.4rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.hero-actions .md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(103, 58, 183, 0.25);
+}
+
+/* 章节标题 */
+.section-heading {
+  position: relative;
+  margin-top: 3rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, #673ab7, #ffa726);
+  border-radius: 2px;
+}
+
+/* 问题列表样式 */
+.question-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+}
+
+.question-list li {
+  position: relative;
+  padding: 0.7rem 0 0.7rem 2rem;
+  border-bottom: 1px dashed var(--md-default-fg-color--lightest);
+  line-height: 1.7;
+}
+
+.question-list li:last-child {
+  border-bottom: none;
+}
+
+.question-list li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: linear-gradient(135deg, #673ab7, #9575cd);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  font-family: ui-serif, Georgia, serif;
+  font-style: italic;
+}
+
+/* 卡片网格强化 */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > .card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > .card:hover {
+  transform: translateY(-3px);
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 10px 24px rgba(103, 58, 183, 0.12);
+}
+
+.md-typeset .grid.cards .lg.middle {
+  font-size: 1.6rem;
+  color: var(--md-primary-fg-color);
+}
+
+/* 阅读路径表格 */
+.path-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.path-table th {
+  background: var(--md-default-bg-color);
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color);
+  border-bottom: 2px solid var(--md-primary-fg-color);
+}
+
+.path-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+.path-table tr:last-child td {
+  border-bottom: none;
+}
+
+.path-table tr:hover td {
+  background: rgba(103, 58, 183, 0.04);
+}
+
+.path-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  background: rgba(103, 58, 183, 0.1);
+  color: var(--md-primary-fg-color);
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+[data-md-color-scheme="slate"] .path-tag {
+  background: rgba(179, 136, 255, 0.18);
+}
+
+/* 元信息小卡 */
+.meta-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.meta-info-item {
+  padding: 0.9rem 1rem;
+  background: var(--md-code-bg-color);
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meta-info-item .meta-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.2rem;
+}
+
+.meta-info-item .meta-value {
+  font-weight: 500;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 2.5rem 1rem 2rem;
+    margin: -1rem -1rem 2rem;
+  }
+  .hero-title {
+    font-size: 1.9rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
