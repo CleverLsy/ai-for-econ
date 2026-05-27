@@ -28,7 +28,7 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
-打开 http://127.0.0.1:8000 查看。
+
 
 ## 贡献
 
@@ -47,7 +47,7 @@ mkdocs serve
 
 ## 作者
 
-刘松月（Clever Liu），北京大学经济学院财政学博士候选人。
+刘松月（Clever Liu）
 
 - GitHub：https://github.com/CleverLsy
 - 个人主页：https://liusongyue.github.io
