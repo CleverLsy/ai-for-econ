@@ -28,7 +28,10 @@ pip install -r requirements.txt
 mkdocs serve
 ```
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a6748ea (feat: write full Concepts chapter (1.1-1.7))
 
 ## 贡献
 
