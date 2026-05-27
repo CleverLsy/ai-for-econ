@@ -125,7 +125,7 @@ graph LR
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/liusongyue/Documents"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "~/Documents"]
     },
     "zotero": {
       "command": "uvx",

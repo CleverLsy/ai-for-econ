@@ -50,8 +50,7 @@ mkdocs serve
 
 ## 作者
 
-刘松月（Clever Liu）
+CleverLsy，经济学研究者。
 
 - GitHub：https://github.com/CleverLsy
-- 个人主页：https://liusongyue.github.io
 - 研究方向：教育财政、数字经济、公共政策、AI for Science
