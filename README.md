@@ -2,7 +2,7 @@
 
 > 经济学研究者的 AI 协作手册
 
-📖 在线阅读：https://liusongyue.github.io/ai-for-econ/
+📖 在线阅读：https://cleverlsy.github.io/ai-for-econ/
 
 ## 这是什么
 
@@ -22,7 +22,7 @@
 ## 本地预览
 
 ```bash
-git clone https://github.com/LiuSongyue/ai-for-econ.git
+git clone https://github.com/CleverLsy/ai-for-econ.git
 cd ai-for-econ
 pip install -r requirements.txt
 mkdocs serve
@@ -49,5 +49,6 @@ mkdocs serve
 
 刘松月（Clever Liu），北京大学经济学院财政学博士候选人。
 
+- GitHub：https://github.com/CleverLsy
 - 个人主页：https://liusongyue.github.io
 - 研究方向：教育财政、数字经济、公共政策、AI for Science

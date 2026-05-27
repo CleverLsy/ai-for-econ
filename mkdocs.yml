@@ -1,10 +1,10 @@
 site_name: AI for Econ
 site_description: 经济学研究者的 AI 协作手册
 site_author: 刘松月 (Clever Liu)
-site_url: https://liusongyue.github.io/ai-for-econ/
+site_url: https://cleverlsy.github.io/ai-for-econ/
 
-repo_name: LiuSongyue/ai-for-econ
-repo_url: https://github.com/LiuSongyue/ai-for-econ
+repo_name: CleverLsy/ai-for-econ
+repo_url: https://github.com/CleverLsy/ai-for-econ
 edit_uri: edit/main/docs/
 
 copyright: "© 2026 刘松月 · CC BY-NC-SA 4.0"
@@ -103,7 +103,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/LiuSongyue
+      link: https://github.com/CleverLsy
     - icon: fontawesome/solid/house
       link: https://liusongyue.github.io
   generator: false

@@ -84,7 +84,7 @@
 - **作者**：刘松月（Clever Liu），北京大学经济学院财政学博士候选人
 - **协作方式**：本手册由作者与 AI（Claude / ChatGPT 等）协同写作，写作过程本身就是一个案例（见 [元说明](preface/meta.md)）
 - **许可**：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
-- **GitHub**：[LiuSongyue/ai-for-econ](https://github.com/LiuSongyue/ai-for-econ) · 欢迎 Issue 与 PR
+- **GitHub**：[CleverLsy/ai-for-econ](https://github.com/CleverLsy/ai-for-econ) · 欢迎 Issue 与 PR
 
 !!! tip "关于版本"
     本手册持续更新。最新更新见 [更新日志](appendix/changelog.md)。
